@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
 
     private void Start() {
         DontDestroyOnLoad(gameObject);
-        NewGame();
+        //NewGame();
     }
 
-    private void NewGame() {
+    public void NewGame() {
         lives = 3;
         score = 0;
 
