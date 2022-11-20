@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         climbing = false;
 
         Vector2 size = collider.bounds.size;
-        size.y += 0.1f;
+        size.y += 0.2f;
         size.x /= 2f;
 
         int amount = Physics2D.OverlapBoxNonAlloc(transform.position, size, 0f, results);
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
             GameObject hit = results[i].gameObject;
 
             if (hit.layer == LayerMask.NameToLayer("Ground")) {
-                grounded = hit.transform.position.y < (transform.position.y - 0.5f);
+                grounded = hit.transform.position.y < (transform.position.y + 2f);
                 Physics2D.IgnoreCollision(collider, results[i], !grounded);
             }
             else if (hit.layer == LayerMask.NameToLayer("Ladder")) {
