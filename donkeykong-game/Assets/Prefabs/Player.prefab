@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8605541969732619342}
   - component: {fileID: 3077385828652790482}
   m_Layer: 0
-  m_Name: Mario
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a15b1bb99c22f2247bd0866d1da3b7ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f56f34a04da9a84887b0a97bbe73058, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,18 +121,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0.10834111, y: -0.12523621}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.0625, y: 1.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.75}
+  m_Size: {x: 0.40556893, y: 1.12442}
   m_EdgeRadius: 0
 --- !u!114 &3077385828652790482
 MonoBehaviour:
@@ -147,10 +147,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprites:
-  - {fileID: 21300000, guid: a15b1bb99c22f2247bd0866d1da3b7ff, type: 3}
-  - {fileID: 21300000, guid: 7e34f8ccdd4095a488689c5c236a41ab, type: 3}
-  - {fileID: 21300000, guid: a15b1bb99c22f2247bd0866d1da3b7ff, type: 3}
-  - {fileID: 21300000, guid: ee012d97f97207644ba2177daccb70d8, type: 3}
+  - {fileID: 21300000, guid: 5f56f34a04da9a84887b0a97bbe73058, type: 3}
+  - {fileID: 21300000, guid: e42eb69f983d78d4badf79decafb4935, type: 3}
+  - {fileID: 21300000, guid: 0d926fbfb351f4b418b96391e83b8af9, type: 3}
+  - {fileID: 21300000, guid: c3e68de01f793d44c9c013bd764326c2, type: 3}
+  - {fileID: 21300000, guid: 9e5bc7b36d564e044a520d49b6dad5c5, type: 3}
+  - {fileID: 21300000, guid: 15b6801e8ca0d9140b1da6946f6d91bb, type: 3}
   climbSprite: {fileID: 21300000, guid: 5e09943706f40364cb207137d1b861db, type: 3}
   moveSpeed: 4
   jumpStrength: 6.5

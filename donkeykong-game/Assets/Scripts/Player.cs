@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         climbing = false;
 
         Vector2 size = collider.bounds.size;
-        size.y += 0.2f;
+        size.y += 0.25f;
         size.x /= 2f;
 
         int amount = Physics2D.OverlapBoxNonAlloc(transform.position, size, 0f, results);
@@ -82,10 +82,10 @@ public class Player : MonoBehaviour
         }
 
         // make Mario face the correct direction
-        if (direction.x > 0f) {
+        if (direction.x < 0f) {
             transform.eulerAngles = Vector3.zero;
         }
-        else if (direction.x < 0f) {
+        else if (direction.x > 0f) {
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
     }
