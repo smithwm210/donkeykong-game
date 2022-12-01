@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6b826aee5508ac4db2fa99205673dc4
+guid: 2872f1e0a6a9ba94ab851bbfb5e27953
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 31.8
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,11 +105,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: groundtileset-updated_0
+      name: PlatTileset-full_0
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 222
         width: 32
         height: 32
       alignment: 0
@@ -119,18 +119,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2e3e25c71c3cbf479decc09f8cdbce1
-      internalID: 1612935512
+      spriteID: 4db90f5404556f847b4e8f625be0054c
+      internalID: -1861861358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_1
+      name: PlatTileset-full_1
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 222
         width: 32
         height: 32
       alignment: 0
@@ -140,18 +140,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0df54aa1c380ff4daf034ab7521e34c
-      internalID: -982078948
+      spriteID: f10652e6745ddb442ac2da2d652ee8e5
+      internalID: 2080941560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_2
+      name: PlatTileset-full_2
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 222
         width: 32
         height: 32
       alignment: 0
@@ -161,39 +161,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1806810b596eee4b9ce3e6aa8fd53e4
-      internalID: 1464158768
+      spriteID: 37e5bd350b1188a49bba4acc306f68b6
+      internalID: -1926238311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_3
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5a6ed0150bb43498b273b2223f994f
-      internalID: 1993439412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: groundtileset-updated_4
+      name: PlatTileset-full_3
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 158
         width: 32
         height: 32
       alignment: 0
@@ -203,18 +182,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ac20670eaee8c45b4d0aa8c254fe9c
-      internalID: 463238663
+      spriteID: 36cf33841dda9d440ade8486fb0f7ac3
+      internalID: 579746137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_5
+      name: PlatTileset-full_4
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 158
         width: 32
         height: 32
       alignment: 0
@@ -224,18 +203,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3664c15abdd6fe4aafe46f0955f4294
-      internalID: 545160714
+      spriteID: 407848cae2cf4f74f8d39ef33fd1b4f1
+      internalID: 154361674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_6
+      name: PlatTileset-full_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 160
+        y: 158
         width: 32
         height: 32
       alignment: 0
@@ -245,39 +224,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42dcfb4b5e741c4dbd40874fe6ab5b0
-      internalID: 1690637038
+      spriteID: e61f723b14b3bc746a5def8ce6d05f0c
+      internalID: -892504953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b58be2c675cffaa4ba568856bd57b302
-      internalID: 1244124284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: groundtileset-updated_8
+      name: PlatTileset-full_6
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 94
         width: 32
         height: 32
       alignment: 0
@@ -287,18 +245,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 129021015136b4a448b884dc14597d77
-      internalID: 1777955309
+      spriteID: 3d86ba0e273269444a91bed626c21ba7
+      internalID: 1979386243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_9
+      name: PlatTileset-full_7
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 94
         width: 32
         height: 32
       alignment: 0
@@ -308,18 +266,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bdb6ebd88d4fae4a8a28d67185cccae
-      internalID: 827662398
+      spriteID: 126aa704d41706c46b9c464e3b4db801
+      internalID: 167631597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_10
+      name: PlatTileset-full_8
       rect:
         serializedVersion: 2
         x: 160
-        y: 96
+        y: 94
         width: 32
         height: 32
       alignment: 0
@@ -329,39 +287,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbb933a3709869045a10577ec5e0980f
-      internalID: -1705585967
+      spriteID: 830777220492823498510f69654a2567
+      internalID: -2065477973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_11
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 400f820a408a67445baa507598214f36
-      internalID: 1773859080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: groundtileset-updated_12
+      name: PlatTileset-full_9
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 30
         width: 32
         height: 32
       alignment: 0
@@ -371,18 +308,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fec8cadf15609eb4cb4ffa5999b42af5
-      internalID: 1693509607
+      spriteID: 81b6675f3aa94be4d800233a81e688de
+      internalID: -414753358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_13
+      name: PlatTileset-full_10
       rect:
         serializedVersion: 2
         x: 96
-        y: 32
+        y: 30
         width: 32
         height: 32
       alignment: 0
@@ -392,18 +329,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83d184b10e884e348972513454844eae
-      internalID: -2134636283
+      spriteID: 78d01a1e3572fd24d900eda54a4068ff
+      internalID: 1993013333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: groundtileset-updated_14
+      name: PlatTileset-full_11
       rect:
         serializedVersion: 2
         x: 160
-        y: 32
+        y: 30
         width: 32
         height: 32
       alignment: 0
@@ -413,29 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb97a319ded90ae4c8ef5bf3637ffa55
-      internalID: 1728144664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: groundtileset-updated_15
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6574e19fd4c5aa041af80d9ad132fa5d
-      internalID: 1814321859
+      spriteID: 3ba165478ee14ff47b0309484ff86163
+      internalID: 447209856
       vertices: []
       indices: 
       edges: []
@@ -451,22 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      groundtileset-updated_13: -2134636283
-      groundtileset-updated_10: -1705585967
-      groundtileset-updated_0: 1612935512
-      groundtileset-updated_1: -982078948
-      groundtileset-updated_15: 1814321859
-      groundtileset-updated_14: 1728144664
-      groundtileset-updated_5: 545160714
-      groundtileset-updated_7: 1244124284
-      groundtileset-updated_4: 463238663
-      groundtileset-updated_12: 1693509607
-      groundtileset-updated_2: 1464158768
-      groundtileset-updated_3: 1993439412
-      groundtileset-updated_6: 1690637038
-      groundtileset-updated_8: 1777955309
-      groundtileset-updated_9: 827662398
-      groundtileset-updated_11: 1773859080
+      PlatTileset-full_4: 154361674
+      PlatTileset-full_10: 1993013333
+      PlatTileset-full_6: 1979386243
+      PlatTileset-full_2: -1926238311
+      PlatTileset-full_5: -892504953
+      PlatTileset-full_7: 167631597
+      PlatTileset-full_0: -1861861358
+      PlatTileset-full_8: -2065477973
+      PlatTileset-full_11: 447209856
+      PlatTileset-full_3: 579746137
+      PlatTileset-full_1: 2080941560
+      PlatTileset-full_9: -414753358
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
