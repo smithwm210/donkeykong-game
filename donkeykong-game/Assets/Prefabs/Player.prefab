@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937971490}
   m_LocalRotation: {x: -0.004205356, y: -0.99992293, z: -0.0004064804, w: -0.011679649}
-  m_LocalPosition: {x: -0.29, y: 0.16, z: 0}
+  m_LocalPosition: {x: -0.4, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 8605541969732619342}
   - component: {fileID: 3077385828652790482}
   - component: {fileID: 1839327404167432113}
-  - component: {fileID: 1412978470}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -190,7 +189,7 @@ BoxCollider2D:
   m_Offset: {x: 0.10834111, y: -0.12523621}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.6, y: 0.5}
     oldSize: {x: 1, y: 1.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -219,6 +218,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  firePoint: {fileID: 1937971491}
+  bulletPrefab: {fileID: 0}
 --- !u!95 &1839327404167432113
 Animator:
   serializedVersion: 4
@@ -239,17 +240,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1412978470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5387777134556284977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edc31ecb543517a4e93c8efd685d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 1937971491}
-  bulletPrefab: {fileID: 8229780452811608569, guid: e7a26b617430cc94eb46bee968cfbe38, type: 3}

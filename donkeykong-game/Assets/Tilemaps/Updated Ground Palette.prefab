@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1459743447994455012}
   - component: {fileID: 6763504819023356531}
   - component: {fileID: 6496143605849026146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Layer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79703781681862218}
   - component: {fileID: 711037800618156768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Updated Ground Palette
   m_TagString: Untagged
   m_Icon: {fileID: 0}

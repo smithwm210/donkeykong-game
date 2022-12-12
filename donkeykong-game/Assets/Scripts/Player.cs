@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class Player : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
 
     const float groundCheckRadius = 0.2f;
+
+    public Transform firePoint;
+    public GameObject bulletPrefab;
 
 
     private void Awake() {
@@ -76,10 +80,25 @@ public class Player : MonoBehaviour
 
         // jump controller
         if (Input.GetButtonDown("Jump"))
+        {
+            animator.SetBool("Jump", true);
             jump = true;
+        }
+            
         else if (Input.GetButtonUp("Jump"))
             jump = false;
 
+
+        // set the yVelocity in the animator
+        animator.SetFloat("yVelocity", rigidbody.velocity.y);
+
+
+        // Weapon code
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.SetFloat("Shoot", 1);
+            StartCoroutine(Shoot());
+        }
 
 
 
@@ -134,11 +153,13 @@ public class Player : MonoBehaviour
         if(facingLeft && dir > 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            firePoint.eulerAngles = Vector3.zero;
             facingLeft = false;
         }
         else if(!facingLeft && dir < 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            firePoint.eulerAngles = new Vector3(0f, 180f, 0f);
             facingLeft = true;
         }
 
@@ -156,6 +177,14 @@ public class Player : MonoBehaviour
     }
 
 
+    IEnumerator Shoot()
+    {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        yield return new WaitForSeconds(0.5f);
+        animator.SetFloat("Shoot", 0);
+    }
+
+
     private void GroundCheck()
     {
         grounded = false;
@@ -165,8 +194,10 @@ public class Player : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
         if(colliders.Length > 0)
             grounded = true;
-    }
 
+        // if grounded the jump bool in animator is diabled
+        animator.SetBool("Jump", !grounded);
+    }
 
 
 
@@ -191,8 +222,10 @@ public class Player : MonoBehaviour
             FindObjectOfType<GameManager>().LevelComplete();
         }
         else if (collision.gameObject.CompareTag("Obstacle")) {
-            enabled = false;
-            FindObjectOfType<GameManager>().LevelFailed();
+            //enabled = false;
+            //FindObjectOfType<GameManager>().LevelFailed();
+
+            // FindObjectOfType<GameManager>().DecrementHealth();
         }
     }
 

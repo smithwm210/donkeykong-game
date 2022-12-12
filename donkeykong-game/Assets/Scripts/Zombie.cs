@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
+    //i dont think this grounded stuff matters bc zombies cant jump
+
 
     [SerializeField] bool grounded = false;
 
