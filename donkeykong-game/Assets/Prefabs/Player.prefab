@@ -186,7 +186,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10834111, y: -0.12523621}
+  m_Offset: {x: 0, y: -0.12523621}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6, y: 0.5}
@@ -211,15 +211,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0920a9b4ac674240bae39db7ed13012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  jumpStrength: 150
-  grounded: 0
   groundCheckCollider: {fileID: 1761908344}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  moveSpeed: 2
+  jumpStrength: 150
   firePoint: {fileID: 1937971491}
   bulletPrefab: {fileID: 0}
+  grounded: 0
 --- !u!95 &1839327404167432113
 Animator:
   serializedVersion: 4

@@ -12,24 +12,22 @@ public class Player : MonoBehaviour
     //private Vector2 direction;
 
     private new Rigidbody2D rigidbody;
-    public float moveSpeed = 1;
-    [SerializeField] float jumpStrength = 150;
-
-    [SerializeField] bool grounded = false;
-    bool jump = false;
-        //private bool climbing;
-
-    private float horizontalValue;
-    private bool facingLeft = true;
-
     private Animator animator;
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] LayerMask groundLayer;
 
     const float groundCheckRadius = 0.2f;
+    public float moveSpeed = 1;
+    [SerializeField] float jumpStrength = 150;
+    private float horizontalValue;
 
     public Transform firePoint;
     public GameObject bulletPrefab;
+
+    [SerializeField] bool grounded = false;
+    bool jump = false;
+        //private bool climbing;
+    private bool facingLeft = true;
 
 
     private void Awake() {
@@ -229,4 +227,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmoSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(groundCheckCollider.position, groundCheckRadius);
+    }
 }
