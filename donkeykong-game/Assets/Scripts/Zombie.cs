@@ -96,12 +96,21 @@ public class Zombie : MonoBehaviour
 
     //private void GroundCheck()
     //{
-        //grounded = false;
+    //grounded = false;
 
-        // see if groundcheck object is colliding with other
-        // 2D colliders in the "Ground" layer
-        //Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
-        //if (colliders.Length > 0)
-            //grounded = true;
+    // see if groundcheck object is colliding with other
+    // 2D colliders in the "Ground" layer
+    //Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
+    //if (colliders.Length > 0)
+    //grounded = true;
     //}
+
+
+    private void onTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            FindObjectOfType<LifeCount>().LoseLife();
+        }
+    }
 }

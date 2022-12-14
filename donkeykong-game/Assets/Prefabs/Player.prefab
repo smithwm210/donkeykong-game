@@ -218,7 +218,7 @@ MonoBehaviour:
   moveSpeed: 2
   jumpStrength: 150
   firePoint: {fileID: 1937971491}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8229780452811608569, guid: e7a26b617430cc94eb46bee968cfbe38, type: 3}
   grounded: 0
 --- !u!95 &1839327404167432113
 Animator:

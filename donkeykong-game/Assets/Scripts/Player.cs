@@ -25,9 +25,10 @@ public class Player : MonoBehaviour
     public GameObject bulletPrefab;
 
     [SerializeField] bool grounded = false;
-    bool jump = false;
+    private bool jump = false;
         //private bool climbing;
     private bool facingLeft = true;
+    private bool dead = false;
 
 
     private void Awake() {
@@ -70,6 +71,12 @@ public class Player : MonoBehaviour
     }
 
     private void Update() {
+
+        if(dead)
+        {
+            enabled = false;
+            return;
+        }
 
             //CheckCollision();
 
@@ -214,17 +221,23 @@ public class Player : MonoBehaviour
         //}
     //}
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.CompareTag("Objective")) {
-            enabled = false;
-            FindObjectOfType<GameManager>().LevelComplete();
-        }
-        else if (collision.gameObject.CompareTag("Obstacle")) {
+    //private void OnCollisionEnter2D(Collision2D collision) {
+        //if (collision.gameObject.CompareTag("Objective")) {
+            //enabled = false;
+            //FindObjectOfType<GameManager>().LevelComplete();
+        //}
+        //else if (collision.gameObject.CompareTag("Obstacle")) {
             //enabled = false;
             //FindObjectOfType<GameManager>().LevelFailed();
 
             // FindObjectOfType<GameManager>().DecrementHealth();
-        }
+        //}
+    //}
+
+    public void Die()
+    {
+        dead = true;
+        FindObjectOfType<GameManager>().Restart();
     }
 
     private void OnDrawGizmoSelected()
@@ -232,4 +245,5 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(groundCheckCollider.position, groundCheckRadius);
     }
+
 }
