@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
         //CancelInvoke();
     //}
 
-    private void CheckCollision() {
+    //private void CheckCollision() {
 
         //climbing = false;
 
@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
                 //climbing = true;
             //}
         //}
-    }
+    //}
 
     private void Update() {
 
@@ -177,6 +177,7 @@ public class Player : MonoBehaviour
             grounded = false;
             jumpFlag = false;
             rigidbody.AddForce(new Vector2(0f, jumpStrength));
+            //AudioManager.instance.PlaySFX("jump");
         }
 
     }
@@ -185,6 +186,7 @@ public class Player : MonoBehaviour
     IEnumerator Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        //AudioManager.instance.PlaySFX("shoot");
         yield return new WaitForSeconds(0.5f);
         animator.SetFloat("Shoot", 0);
     }
@@ -237,6 +239,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         dead = true;
+        //AudioManager.instance.PlaySFX("death");
         FindObjectOfType<GameManager>().Restart();
     }
 

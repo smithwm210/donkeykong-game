@@ -7,10 +7,11 @@ public class GameManager : MonoBehaviour
     private int lives;
     private int score;
 
-    //Vector2 playerInitPosition;
+    Vector2 playerInitPosition;
 
     private void Start() {
         DontDestroyOnLoad(gameObject);
+        playerInitPosition = FindObjectOfType<Player>().transform.position;
         //NewGame();
     }
 

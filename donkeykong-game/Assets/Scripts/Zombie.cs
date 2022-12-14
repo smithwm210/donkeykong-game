@@ -19,7 +19,7 @@ public class Zombie : MonoBehaviour
     public int nextID = 0;
     //value that applies to ID to change
     private int idChangeValue = 1;
-    public float speed = 0.25f;
+    public float speed = 1;
     
     
     private void Reset()
@@ -31,6 +31,7 @@ public class Zombie : MonoBehaviour
     {
         //make box collider trigger
         GetComponent<BoxCollider2D>().isTrigger = true;
+        GetComponent<BoxCollider2D>().size = new Vector2(0.5f, 1.5f);
 
         GameObject root = new GameObject(name + "-Root");
         //reset position of root to zombie
@@ -52,7 +53,6 @@ public class Zombie : MonoBehaviour
         points = new List<Transform>();
         points.Add(p1.transform);
         points.Add(p2.transform);
-
 
     }
 
@@ -106,7 +106,7 @@ public class Zombie : MonoBehaviour
     //}
 
 
-    private void onTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
