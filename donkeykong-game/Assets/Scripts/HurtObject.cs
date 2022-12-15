@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 
-public class DeathObject : MonoBehaviour
+public class HurtObject : MonoBehaviour
 {
 
     private void Reset()
@@ -14,7 +14,7 @@ public class DeathObject : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            FindObjectOfType<Player>().Die();
+            FindObjectOfType<LifeCount>().LoseLife();
         }
     }
 }
