@@ -32,6 +32,11 @@ public class Zombie : MonoBehaviour
     //value that applies to ID to change
     private int idChangeValue = 1;
     public float speed = 1;
+
+    private void Start()
+    {
+        AudioManager.instance.PlaySFX("zombie");
+    }
     
     
     private void Reset()
@@ -65,7 +70,6 @@ public class Zombie : MonoBehaviour
         points = new List<Transform>();
         points.Add(p1.transform);
         points.Add(p2.transform);
-
     }
 
     private void Update()

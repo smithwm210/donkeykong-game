@@ -22,10 +22,11 @@ public class LifeCount : MonoBehaviour
 
 
         //play the getting hurt audio
+        AudioManager.instance.PlaySFX("hurt");
 
 
         //Lose when you run out of lives
-        if(livesRemaining == 0)
+        if (livesRemaining == 0)
         {
             FindObjectOfType<Player>().Die();
         }
