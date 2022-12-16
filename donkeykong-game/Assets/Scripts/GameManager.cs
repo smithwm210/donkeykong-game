@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     Vector2 playerInitPosition;
 
-    private void Start() {
+    private void StartNow() {
         DontDestroyOnLoad(gameObject);
         playerInitPosition = FindObjectOfType<Player>().transform.position;
         //NewGame();
@@ -68,5 +68,8 @@ public class GameManager : MonoBehaviour
             LoadLevel(level);
         }
 
+    }
+    public void Quit(){
+        Application.Quit();
     }
 }
