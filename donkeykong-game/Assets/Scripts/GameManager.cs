@@ -7,9 +7,18 @@ public class GameManager : MonoBehaviour
     private int lives;
     private int score;
 
-    private void Start() {
+    Vector2 playerInitPosition;
+
+    private void StartNow() {
         DontDestroyOnLoad(gameObject);
+        playerInitPosition = FindObjectOfType<Player>().transform.position;
         //NewGame();
+    }
+
+    public void Restart()
+    {
+        //restart the scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void NewGame() {
@@ -59,5 +68,8 @@ public class GameManager : MonoBehaviour
             LoadLevel(level);
         }
 
+    }
+    public void Quit(){
+        Application.Quit();
     }
 }

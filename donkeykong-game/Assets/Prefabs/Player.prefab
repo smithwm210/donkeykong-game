@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1761908343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761908344}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1761908344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761908343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.125, y: -0.717, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4440063233064722577}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1937971490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937971491}
+  m_Layer: 0
+  m_Name: Firing Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937971491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937971490}
+  m_LocalRotation: {x: -0.004205356, y: -0.99992293, z: -0.0004064804, w: -0.011679649}
+  m_LocalPosition: {x: -0.4, y: 0.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4440063233064722577}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 180.041, y: -1.3389893, z: 180.482}
 --- !u!1 &5387777134556284977
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,6 +75,7 @@ GameObject:
   - component: {fileID: 5036892096860151401}
   - component: {fileID: 8605541969732619342}
   - component: {fileID: 3077385828652790482}
+  - component: {fileID: 1839327404167432113}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31,7 +94,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1761908344}
+  - {fileID: 1937971491}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,7 +167,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -117,14 +182,14 @@ BoxCollider2D:
   m_GameObject: {fileID: 5387777134556284977}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9ec78ea83a662c84da7c1478930044b3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10834111, y: -0.12523621}
+  m_Offset: {x: 0, y: -0.12523621}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.6, y: 0.5}
     oldSize: {x: 1, y: 1.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -146,13 +211,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0920a9b4ac674240bae39db7ed13012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSprites:
-  - {fileID: 21300000, guid: 5f56f34a04da9a84887b0a97bbe73058, type: 3}
-  - {fileID: 21300000, guid: e42eb69f983d78d4badf79decafb4935, type: 3}
-  - {fileID: 21300000, guid: 0d926fbfb351f4b418b96391e83b8af9, type: 3}
-  - {fileID: 21300000, guid: c3e68de01f793d44c9c013bd764326c2, type: 3}
-  - {fileID: 21300000, guid: 9e5bc7b36d564e044a520d49b6dad5c5, type: 3}
-  - {fileID: 21300000, guid: 15b6801e8ca0d9140b1da6946f6d91bb, type: 3}
-  climbSprite: {fileID: 21300000, guid: 5e09943706f40364cb207137d1b861db, type: 3}
-  moveSpeed: 4
-  jumpStrength: 6.5
+  groundCheckCollider: {fileID: 1761908344}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 2
+  jumpStrength: 150
+  firePoint: {fileID: 1937971491}
+  bulletPrefab: {fileID: 8229780452811608569, guid: e7a26b617430cc94eb46bee968cfbe38, type: 3}
+  grounded: 0
+--- !u!95 &1839327404167432113
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387777134556284977}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e38bbd3711447554bb2dc14ddb30041f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
