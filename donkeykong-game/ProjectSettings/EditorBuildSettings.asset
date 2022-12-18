@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Preload.unity
     guid: 9141ed2edca73cd459db34c22e3ad1df
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stage 1.unity
     guid: 5b78f567ed10e454f8b94db88d32920d
   - enabled: 0
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DK-Level 2.unity
     guid: 1ec6ce4c6bde9b2449746cd7556542ea
+  - enabled: 1
+    path: Assets/Scenes/Level-1.unity
+    guid: d755c0ed305015f498a4bd7d8805fe8d
   m_configObjects: {}
