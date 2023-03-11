@@ -33,10 +33,10 @@ public class Zombie : MonoBehaviour
     private int idChangeValue = 1;
     public float speed = 1;
 
-    private void Start()
-    {
-        AudioManager.instance.PlaySFX("zombie");
-    }
+    //private void Start()
+    //{
+        //AudioManager.instance.PlaySFX("zombie");
+    //}
     
     
     private void Reset()
